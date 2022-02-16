@@ -4,21 +4,19 @@
 
 @import './base/common';
 
-@import './components/container';
+@import './base/container';
 
 @import './layout/header';
 
 @import './components/logo';
 
-@import './layout/hero';
-
 @import './components/modal';
+
+@import './components/fieldmodal';
 
 @import './components/btn';
 
-@import './utils/backdrop';
-
-@import './components/fieldmodal';
+@import './layout/hero';
 
 @import './layout/feature';
 
@@ -32,4 +30,10 @@
 
 @import './layout/grid';
 
+@import './layout/network';
+
+@import './layout/send';
+
 @import './layout/footer';
+
+@import './utils/backdrop';

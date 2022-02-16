@@ -13,10 +13,26 @@
   color: $primaryColor;
 
   height: 50px;
-  background: #2196f3;
+  background: $primaryBtncolor;
 
   border-radius: 4px;
   border: transparent;
+}
+.modal-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: visible;
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $primaryColor;
+
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn__close {
@@ -42,37 +58,6 @@
   }
 }
 
-.but__sumbit {
-  width: 200px;
-  height: 50px;
-  padding: 10px 0;
-  margin-left: 12px;
-
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
-
-  outline: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-  }
-}
-
 .form__btn-sumbit {
   font-family: inherit;
   font-style: normal;
@@ -91,14 +76,45 @@
 
   color: $primaryColor;
 
-  background: #2196f3;
+  background: $primaryBtncolor;
   border-radius: 4px;
   border: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: $primarySamCalor;
+  }
+}
+
+.but__sumbit {
+  width: 200px;
+  height: 50px;
+  padding: 10px 0;
+  margin-left: 12px;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $primaryColor;
+
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  background: $primaryBtncolor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $primarySamCalor;
   }
 }
 
@@ -107,36 +123,38 @@
   justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
-.secondary-list__item + .secondary-list__item {
-  margin-left: 8px;
-}
 
-.secondary-list__button {
-  font-family: inherit;
-  font-style: normal;
+  &__item + &__item {
+    margin-left: 8px;
+  }
 
-  height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  &__button {
+    font-family: inherit;
+    font-style: normal;
 
-  padding: 6px 22px;
-  min-width: 73px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 
-  border-radius: 4px;
-  background-color: #f5f4fa;
-  border: transparent;
-  cursor: pointer;
+    padding: 6px 22px;
+    min-width: 73px;
 
-  background-color: #f5f4fa;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus,
-  &:active {
+    border-radius: 4px;
+    background-color: $iconsColor;
+    border: transparent;
+    cursor: pointer;
+
+    background-color: $iconsColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
     color: $primaryColor;
     background-color: $accentColor;
   }
