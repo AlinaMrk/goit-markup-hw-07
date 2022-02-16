@@ -1,0 +1,37 @@
+.info__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: $primaryTextColor;
+}
+.info {
+  display: flex;
+}
+
+.info__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.info__item {
+  justify-content: space-between;
+  width: 370px;
+  position: relative;
+}
+
+.info__text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px;
+
+  line-height: 1.14;
+  font-weight: 700;
+  color: $primaryColor;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  text-transform: uppercase;
+  text-align: center;
+}

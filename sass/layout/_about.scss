@@ -1,0 +1,52 @@
+.about__section {
+  background: #f5f4fa;
+}
+.about__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+  justify-content: space-between;
+  color: $primaryTextColor;
+}
+
+.about {
+  display: flex;
+
+  .about__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $primaryTextColor;
+  }
+  .about__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 10px;
+  }
+  .about__name,
+  .about__profession {
+    text-align: center;
+  }
+  .about__us {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.about__item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.about__item:not(:first-child) {
+  margin-left: 30px;
+}
