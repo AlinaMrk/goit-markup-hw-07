@@ -5,9 +5,9 @@
 
 .navi {
   display: flex;
-  margin-left: 93px;
+  margin-right: 93px;
 
-  &__item {
+  &__item:not(:first-child) {
     margin-left: 50px;
   }
 }

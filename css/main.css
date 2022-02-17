@@ -67,7 +67,7 @@ ul {
   margin-left: 93px;
 }
 
-.navi__item {
+.navi__item:not(:first-child) {
   margin-left: 50px;
 }
 
