@@ -1,17 +1,16 @@
 .footer {
+  padding-top: 60px 0;
   background-color: $pimaryFooColor;
+
   &__container {
+    align-items: baseline;
     display: flex;
   }
-}
-.footer .footer-address {
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 .address {
   margin-top: 20px;
 }
-.address__item {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 
   & + .address__link--address {

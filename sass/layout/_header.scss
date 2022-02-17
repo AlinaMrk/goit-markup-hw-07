@@ -1,3 +1,13 @@
+.header__container {
+  display: flex;
+  border-bottom: 1px solid $headerBorColor;
+
+  &__logo:hover,
+  &__logo:focus {
+    color: $accentColor;
+  }
+}
+
 .header__navigation {
   display: flex;
   align-items: center;
