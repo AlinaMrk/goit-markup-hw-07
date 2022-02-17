@@ -1,15 +1,12 @@
 .footer {
-  position: absolute;
-  width: 1600px;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-
+  background-color: $pimaryFooColor;
   &__container {
     display: flex;
-    align-items: baseline;
   }
+}
+.footer .footer-address {
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .address {
   margin-top: 20px;

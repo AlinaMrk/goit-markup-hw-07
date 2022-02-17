@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid $primaryBoColor;
+  border-bottom: 1px solid $headerBorColor;
 
   &__container {
     display: flex;
@@ -19,7 +19,6 @@
   text-decoration: none;
   letter-spacing: 0.03em;
   margin-left: 93px;
-
   padding-top: 24px;
   padding-bottom: 25px;
   text-decoration: none;
